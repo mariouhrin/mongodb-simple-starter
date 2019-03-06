@@ -4,15 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run-db": "ts-node ./db/crudTest.ts"
+    "start": "ts-node ./db/initialInsertToDB.ts",
+    "test-insert": "nodemon --exec ts-node ./db/newInsertToDB.ts"
   },
   "author": "mario uhrin",
   "license": "MIT",
   "dependencies": {
-    "mongodb": "^3.1.13"
+    "@types/mongoose": "^5.3.20",
+    "@types/uuid": "^3.4.4",
+    "moment": "^2.24.0",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.17",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@types/mongodb": "^3.1.20",
+    "npm-run-all": "^4.1.5",
     "ts-node": "^8.0.2",
     "typescript": "^3.3.3333"
   }
