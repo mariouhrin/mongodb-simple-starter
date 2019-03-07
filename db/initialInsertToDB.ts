@@ -14,6 +14,7 @@ async function insertJSON() {
 
     const sequenceCollection = await createSequenceCollection(db);
     await sequenceCollection.insertOne({ seqNumber: 33, seqRef: 'ref' });
+    process.exit();
   } catch (err) {
     console.log(`got error: ${err}`);
   }

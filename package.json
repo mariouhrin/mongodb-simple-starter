@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./run-mongo.sh && yarn init-db",
+    "start": "./run-mongo.sh && yarn init-db && yarn test:db",
     "init-db": "ts-node ./db/initialInsertToDB.ts",
     "test:db": "nodemon --exec ts-node ./db/newInsertToDB.ts"
   },

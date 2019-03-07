@@ -15,8 +15,6 @@
 
 ### Try to run it
 
-- `yarn start` (connect to mongodb)
+- `yarn start` 
 
-or try to insert new document  
-
-- `yarn test:db` 
+this will start mongodb with some initial inserts
